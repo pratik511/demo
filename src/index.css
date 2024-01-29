@@ -15,6 +15,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.slick-arrow .slick-next{
+
+.login-form-height {
+  height: calc(100vh - 70px);
+}
+.slick-arrow{
   display: none !important;
 }

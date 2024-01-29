@@ -3,8 +3,8 @@ import { Navigate } from "react-router-dom";
 import Header from "../component/header";
 import { isLoggedIn } from "../helpers/utils/auth.util";
 
-const PublicRoute = ({ element }) => {
-  const isAuthenticated = !isLoggedIn();
+const PrivateRoute = ({ element }) => {
+  const isAuthenticated = isLoggedIn();
 
   return isAuthenticated ? (
     <React.Fragment>
@@ -12,8 +12,8 @@ const PublicRoute = ({ element }) => {
       {element}
     </React.Fragment>
   ) : (
-    <Navigate to="/" />
+    <Navigate to="/login" />
   );
 };
 
-export default PublicRoute;
+export default PrivateRoute;

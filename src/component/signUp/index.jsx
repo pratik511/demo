@@ -87,7 +87,7 @@ const SignUp = () => {
 
     return (
         <React.Fragment>
-            <div className="min-h-screen flex items-center justify-center bg-gray-100">
+            <div className="flex items-center justify-center bg-gray-100 login-form-height">
                 <div className="bg-white p-8 rounded shadow-md w-96">
                     <h1 className="text-2xl font-semibold mb-6">Sign Up</h1>
 
